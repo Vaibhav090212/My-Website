@@ -1,15 +1,5 @@
 /* RESET BASE */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
-  color: #0ff;
-  background: transparent; /* let animation show */
-}
-html {
-  background: #000; /* true fallback */
-}
+body, html { margin: 0; padding: 0; overflow-x: hidden; background: #000; /* fallback if canvas fails */ font-family: Arial, sans-serif; color: #0ff; }
 
 
 /* Background animations always behind */
@@ -89,5 +79,6 @@ nav a:hover { color: #fff; }
     margin: 60px 0 30px 0; /* pushes it down from navbar and above cards */
     text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
+
 
 
