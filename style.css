@@ -125,3 +125,20 @@ nav a:hover {
   margin-bottom: 0.8rem;
 }
 
+/* Background animations should always stay behind content */
+#starfield, #particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;   /* pushes it behind everything */
+  pointer-events: none; /* lets clicks pass through */
+}
+
+/* Make sure your content is above */
+.content, h1, h2, h3, p, .certifications {
+  position: relative;
+  z-index: 1;
+}
+
