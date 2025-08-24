@@ -183,4 +183,58 @@ header, main, .card, h1, h2, h3, p {
 
 
 
+/* Make particles and starfield cover background */
+#particles-js,
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* keep it in the background */
+}
+
+/* Hero heading */
+.hero {
+  text-align: center;
+  padding: 100px 20px 50px; /* top spacing so it's away from certs */
+}
+
+.hero h1.glow {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+/* Certifications section */
+.certifications {
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1; /* keeps certs above the background animation */
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
 
